@@ -1,0 +1,74 @@
+.text-primary {
+  color: #4853db!important;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #00c4ff;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed';
+}
+
+header.masthead {
+  position: relative;
+  background: url("../../assets/img/hero-img.png") center / cover no-repeat, #00c4ff;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: 70VH;
+  }
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: rgb(33,37,41);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+.col-md-10.col-lg-8.col-xl-7.mx-auto.mobile-col {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .col-md-10.col-lg-8.col-xl-7.mx-auto.mobile-col {
+    display: block;
+  }
+}
+
+a {
+  color: #4853DB;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: 'Oswald';
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: rgba(33,37,41,0.25);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+.col.img-col-1 {
+}
+

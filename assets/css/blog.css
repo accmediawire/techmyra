@@ -1,0 +1,313 @@
+.blog__bar {
+  width: 100%;
+  background: #F7F7F7;
+  position: relative;
+  padding: 40px 0 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__bar {
+    padding: 10px 0;
+  }
+}
+
+.blog__bar .list-dropdown {
+  width: 100%;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__bar .list-dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-left: 20px;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    z-index: 1000;
+    width: calc(100% - 130px);
+  }
+}
+
+@media only screen and (max-width: 700px) and (max-width: 500px) {
+  .blog__bar .list-dropdown {
+    width: calc(100% - 100px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__bar .list-dropdown .title {
+    width: 100%;
+    padding: 14px 0;
+    padding-right: 60px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 700;
+    white-space: nowrap;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog__bar .list-dropdown .title {
+    font-size: .875em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__bar .list-dropdown .title:after {
+    content: "";
+    width: 20px;
+    height: 8px;
+    background: url(https://www.usmangroup.com/wp-content/themes/usmangroup/assets/styles/../resources/triangle.svg) no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blog__bar .list-dropdown ul {
+    position: absolute;
+    left: 20px;
+    top: 100%;
+    width: 100%;
+    max-height: 260px;
+    overflow-y: scroll;
+    max-width: 100%;
+    background: #fff;
+    padding: 0;
+    z-index: 400;
+    border: 2px solid #000;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) and (max-width: 700px) {
+  .blog__bar .list-dropdown ul {
+    width: 100%;
+  }
+}
+
+.blog__bar .list-dropdown li {
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 701px) {
+  .blog__bar .list-dropdown li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .list-dropdown li.active {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .blog__bar .list-dropdown a {
+    color: rgba(0,0,0,.5);
+    text-transform: uppercase;
+    font-size: .875em;
+    min-width: 120px;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .blog__bar .list-dropdown li.active a {
+    font-weight: 700;
+    color: #000;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .blog__bar .list-dropdown a:after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: url(https://www.usmangroup.com/wp-content/themes/usmangroup/assets/styles/../resources/line-wiggle.svg) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .blog__bar .list-dropdown li.active a:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.blog__grid {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+}
+
+.blog__article {
+  width: 50%;
+  padding: 60px 50px;
+  position: relative;
+  display: block;
+  -webkit-animation-duration: .375s;
+  animation-duration: .375s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@media only screen and (max-width: 830px) {
+  .blog__article {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog__article {
+    padding: 30px 20px;
+  }
+}
+
+.blog__article:nth-of-type(1), .blog__article:nth-of-type(5), .blog__article:nth-of-type(9), .blog__article:nth-of-type(13), .blog__article:nth-of-type(17), .blog__article:nth-of-type(21), .blog__article:nth-of-type(25), .blog__article:nth-of-type(29), .blog__article:nth-of-type(33) {
+  background: #FED766;
+}
+
+.blog__article h2 {
+  font-size: 1.875em;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: 'Oswald';
+  margin-bottom: 40px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.blog__article p {
+  font-size: 1.125em;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.blog__article article {
+  max-width: 420px;
+}
+
+.blog__article .cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: -999em;
+}
+
+.blog__article:nth-of-type(2), .blog__article:nth-of-type(6), .blog__article:nth-of-type(10), .blog__article:nth-of-type(14), .blog__article:nth-of-type(18), .blog__article:nth-of-type(22), .blog__article:nth-of-type(26), .blog__article:nth-of-type(30), .blog__article:nth-of-type(34) {
+  background: #7AFCFF;
+}
+
+/* blog-article-page */
+
+.intro.blog-intro .intro__content {
+  width: 610px;
+  max-width: 100%;
+}
+
+.intro .author {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.intro .author img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.intro .author__info p {
+  margin: 0;
+}
+
+.intro .author__info strong {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 2px;
+}
+
+.intro .author__info .date {
+  font-size: .75em;
+  color: #999799;
+}
+
+.intro .author:after {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #FED766;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.intro__details {
+  position: absolute;
+  right: 0;
+  top: 46%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #FED766;
+  padding: 30px;
+  width: 400px;
+}
+
+/* intro blog-intro */
+
+.intro.blog-intro {
+  width: 100%;
+  padding: 20px 0 100px;
+  position: relative;
+}
+
